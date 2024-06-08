@@ -1,0 +1,33 @@
+/* 모든 요소에 box-sizing과 margin을 초기화하고 배경색과 텍스트 색상 설정 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: black;
+    color: ghostwhite;
+}
+
+/* h1 및 input 요소에 상단과 하단 여백을 추가 */
+h1,
+input {
+    margin: 10px;
+}
+
+/* 문서를 중앙에 정렬하고, 세로 방향으로 배치 */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 테이블의 경계를 결합 */
+table {
+    border-collapse: collapse;
+}
+
+/* 테이블 데이터 셀의 스타일을 설정 */
+td {
+    border: 1px solid lightgrey;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}

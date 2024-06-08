@@ -1,0 +1,102 @@
+/* 모든 요소에 box-sizing과 margin을 초기화 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* 문서를 중앙에 정렬하고, 세로 방향으로 배치 */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 컨테이너의 최소 및 최대 너비를 설정 */
+.container {
+    min-width: 320px;
+    max-width: 640px;
+    width: 100%;
+}
+
+/* 헤더의 폰트 크기와 하단 여백을 설정 */
+.header {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* To Do List 컨테이너의 배경색과 패딩을 설정 */
+.todolist-container {
+    background-color: plum;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 입력 영역의 상단 여백을 설정 */
+.inputArea {
+    margin: 10px;
+}
+
+/* 입력 필드의 스타일을 설정 */
+.inputArea #todoInput {
+    width: 80%;
+    border: 1px solid #eee;
+    font-size: 1.3em;
+    height: 45px;
+    padding: 10px;
+}
+
+/* 입력 필드에 포커스 시 outline을 제거 */
+.inputArea #todoInput:focus {
+    outline: none;
+}
+
+/* 추가 버튼의 스타일을 설정 */
+.inputArea #addBtn {
+    width: 45px;
+    height: 45px;
+    font-size: 40px;
+    background-color: #000;
+    color: white;
+    border: none;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+/* 목록 영역의 스타일을 설정 */
+.listArea {
+    list-style: none;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+/* 목록 아이템의 스타일을 설정 */
+.listArea li {
+    padding: 10px;
+    display: flex;
+}
+
+/* 체크 버튼의 스타일을 설정 */
+.listArea .checkBtn {
+    border: none;
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* 체크된 항목에 취소선을 추가 */
+.listArea .check {
+    text-decoration: line-through;
+}
+
+/* 삭제 버튼의 스타일을 설정 */
+.listArea .delBtn {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-weight: bold;
+    font-size: 1em;
+    margin-left: 20px;
+    cursor: pointer;
+}
